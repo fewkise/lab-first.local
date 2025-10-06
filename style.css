@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffcfc;
+    color: #333;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    a {
+        color: rgb(250, 151, 167);
+        font-size: 30px;
+    }
+}
