@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <a href="first.php">Лабораторная 1</a> <br>
-    <a href="second.php">Лабораторная 2</a>
+    <a href="../FirstLab/first.php">Лабораторная 1</a> <br>
+    <a href="../SecondLab/second.php">Лабораторная 2</a><br>
+    <a href="../ThirdLab/third.php">Лабораторная 3</a> 
 </body>
 </html>
