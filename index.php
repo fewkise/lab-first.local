@@ -11,6 +11,7 @@
 <body>
     <a href="../FirstLab/first.php">Лабораторная 1</a> <br>
     <a href="../SecondLab/second.php">Лабораторная 2</a><br>
-    <a href="../ThirdLab/third.php">Лабораторная 3</a> 
+    <a href="../ThirdLab/third.php">Лабораторная 3</a> <br>
+    <a href="../FourLab/four.php">Лабораторная 4</a> 
 </body>
 </html>
