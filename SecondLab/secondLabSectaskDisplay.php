@@ -9,16 +9,7 @@
 <body>
     <?php
     $matrix = $_POST['matrix'];
-        foreach ($matrix as &$row) {
-            foreach ($row as &$val) {
-            if (!is_numeric($val)) {
-             echo "Вы ввели не числа!";
-            return null;
-            }
-            $val = (int)$val;
-            }
-        }
-        $sums = [];
+    $sums = [];
     for ($i = 0; $i < 3; $i++) {
     $sums[$i] = array_sum($matrix[$i]);
     }

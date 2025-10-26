@@ -20,7 +20,7 @@
   <br>
   <form action="thirdLabSecTask.php" method="post">
     <h2>Задание №2</h2>
-    <h3>Вариант №8</h3>
+    <h3>Вариант №8, высокий уровень</h3>
     <p>n*m=5*5. Тип элементов: вещественный. <br> Задание: Вычислить среднее арифметическое элементов побочной диагонали матрицы</p>
     <table border="1" cellpadding="5" style="border-collapse: collapse;">
         <tr>
