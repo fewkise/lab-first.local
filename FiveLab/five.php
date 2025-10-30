@@ -26,5 +26,23 @@
         <label>Цвет: <input type="text" name="color" value="green" required></label><br>
         <button type="submit">Отправить</button>
     </form>
+    <h2>Задание 3 </h2>
+    <h3>Вариант 9, (11.3) </h3>
+    <p>Задание: Построить класс 1-го уровня и 2 уровня</p>
+    <h4>Поля и функция «качества» (Q ) класса 1-го уровня: </h4>
+    <p>Спортсмен: - фамилия; - число соревнований; - сумма мест, занятых спортсменом в соревнованиях. Q = (число соревнований)/ (сумма мест)</p>
+    <h4>Поле и функция «качества» Qp класса 2-го уровня:  </h4>
+    <p>P- занимал хотя бы раз первое место Qp = 1,5·Q, если Р - истина, иначе – Qp= Q,</p>
+    <form action="displayFiveSec.php" method="post">
+        Фамилия: <input type="text" name="surname" required><br>
+        Число соревнований: <input type="number" name="competitions" required><br>
+        Сумма мест: <input type="number" name="sum_places" required><br>
+        Было ли 1 место? 
+        <select name="first_place" required>
+            <option value="1">Да</option>
+            <option value="0">Нет</option>
+        </select><br>
+        <input type="submit" value="Рассчитать">
+    </form>
 </body>
 </html>

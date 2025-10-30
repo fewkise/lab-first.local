@@ -8,18 +8,15 @@ $color = $_POST['color'];
 
 class Rectangle {
     public $x1, $y1, $x2, $y2;
-
     function __construct($x1, $y1, $x2, $y2){
         $this->x1 = $x1;
         $this->y1 = $y1;
         $this->x2 = $x2;
         $this->y2 = $y2;
     }
-
     function isKvadrat(){
         return abs($this->x2 - $this->x1) === abs($this->y2 - $this->y1);
     }
-
     function risunok(){
         $x = min($this->x1, $this->x2);
         $y = min($this->y1, $this->y2);
@@ -32,13 +29,11 @@ class Rectangle {
 class RectangleWithText extends Rectangle {
     public $text;
     public $color;
-
     function __construct($x1, $y1, $x2, $y2, $text, $color){
         parent::__construct($x1, $y1, $x2, $y2);
         $this->text = $text;
         $this->color = $color;
     }
-
     function perimeterDiagonalProduct(){
         $width = abs($this->x2 - $this->x1);
         $height = abs($this->y2 - $this->y1);
@@ -48,7 +43,6 @@ class RectangleWithText extends Rectangle {
         echo "Диагональ: ".round($diagonal, 2)."<br>";
         return $perimeter * $diagonal;
     }
-
     function drawSVG(){
         echo "Прямоугольник-потомок, 2 задание <br>";
         list($x, $y, $width, $height) = $this->risunok();
@@ -68,9 +62,9 @@ $proizvedenie = $obj->perimeterDiagonalProduct();
 $rect = new Rectangle($x1, $y1, $x2, $y2);
 list($x, $y, $width, $height) = $rect->risunok();
 if ($rect->isKvadrat()) {
-    echo "Этот прямоугольник является квадратом";
+    echo "этот прямоугольник является квадратом";
 } else {
-    echo "Этот прямоугольник не квадрат";
+    echo "этот прямоугольник не квадрат!!!";
 }
 ?>
 
@@ -79,7 +73,6 @@ if ($rect->isKvadrat()) {
 <head>
 <meta charset="UTF-8" />
 <link rel="stylesheet" href="../style.css"/>
-<title>Результат</title>
 </head>
 <body>
 <p>Произведение периметра на длину диагонали: <?= round($proizvedenie,2) ?></p>
